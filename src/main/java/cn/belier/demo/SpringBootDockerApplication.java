@@ -23,4 +23,11 @@ public class SpringBootDockerApplication {
         return result;
     }
 
+    @GetMapping("demo2")
+    public Map<String, String> demo2() {
+        Map<String, String> result = new HashMap<>(1);
+        result.put("name", "belier2");
+        return result;
+    }
+
 }
